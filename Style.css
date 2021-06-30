@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+#back {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(25, 44, 63);
+}
+
+.left {
+    width: 65%;
+    min-height: 100vh;
+    position: relative;
+    /* background-color: rgb(25, 43, 63); */
+}
+
+.elements {
+    width: 70%;
+    top: 43%;
+    left: 30%;
+    transform: translate(-30%, -43%);
+    min-height: 40vh;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.img {
+    width: 53%;
+    /* background-color: red; */
+    min-height: 280px;
+}
+
+.img img {
+    min-height: 280px;
+    width: 100%;
+}
+
+.text {
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+.text h1 {
+    color: rgb(241, 242, 243);
+}
+
+.text h4 {
+    color: #ffff;
+    opacity: .8;
+    letter-spacing: .1px;
+    font-size: 13px;
+    line-height: 20px;
+    width: 88%;
+    margin-top: 2.5%;
+    font-weight: 400;
+}
+
+.right {
+    width: 35%;
+    /* background-color: yellow; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitebox {
+    width: 83%;
+    border-radius: 10px;
+    min-height: 75vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.login {
+    width: 72%;
+    margin-top: 10%;
+    /* background-color: red; */
+}
+
+.loginbtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    /* background-color: yellow; */
+}
+
+.loginbtn h3 {
+    font-size: 15px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+#register {
+    color: rgba(0, 0, 0, 0.295);
+}
+
+.shiftline {
+    width: 100%;
+    min-height: 2px;
+    background-color: rgb(218, 209, 209);
+    border-radius: 50px;
+}
+
+.shiftlineHalf {
+    min-height: 2px;
+    width: 50%;
+    background-color: rgb(25, 44, 63);
+    border-radius: 50px;
+}
+
+.detailbox {
+    width: 76%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.email h5 {
+    font-size: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    color: rgb(45, 83, 122);
+}
+
+.email input {
+    width: 100%;
+    padding: 15px 22px;
+    border: .5px solid rgba(0, 0, 0, 0.39);
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: 900;
+    color: black;
+    font-family: 'Comfortaa';
+}
+
+.email:nth-child(2) {
+    margin-top: 14%;
+}
+
+.forget {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottomloginbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    /* background-color: red; */
+}
+
+.bottomloginbtn button {
+    padding: 18px 55px;
+    border-radius: 7px;
+    letter-spacing: .3px;
+    font-size: 10px;
+    color: #ffff;
+    border: none;
+    background-color: rgba(25, 44, 63, 0.801);
+}
+
+.bottomloginbtn>h5 {
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(170, 168, 168);
+}
+
+#reg {
+    color: rgb(45, 83, 122);
+}
+
+@media(max-width:550px) {
+    #back {
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        min-height: 600px;
+    }
+    .img{
+        width: 360px;
+    }
+    .elements{
+        width: 100%;
+        top: 46%;
+        left: 21%;
+        transform: translate(-21% , -46%);
+        /* background-color: red; */
+        width: 90%;
+    }
+    .text h5{
+        width: 100%;
+    }
+   .right{
+       width: 100%;
+       min-height: 600px;
+       margin-bottom: 50px;
+       /* background-color: red; */
+   }
+   .whitebox{
+       min-height: 580px;
+   }
+}
+
+@media(max-width:450px){
+    .img{
+        width: 250px;
+    }
+    
+}
+
+@media(max-width:411px){
+    .whitebox{
+        min-height: 450px;
+    }
+
+    .left{
+        min-height: 450px;
+    }
+   
+    .bottomloginbtn{
+        margin-bottom: 15px;
+    }
+    .right{
+        min-height: 600px;
+    }
+}
+
+@media(max-width:375px){
+    .whitebox{
+        min-height: 480px;
+    }
+    .right{
+       margin-bottom: 20px;
+
+    }
+}
+
+@media(max-width:320px){
+    .right{
+        margin-top: 100px;
+    }
+    .elements{
+        margin-top: 50px;
+    }
+}
+
