@@ -197,6 +197,18 @@ body{
     color: rgb(45, 83, 122);
 }
 
+@media (max-width:750px) {
+    .img{
+        width: 85%;
+    }
+    .left{
+        width:50%
+    }
+    .right{
+        width:50%
+    }
+}
+
 @media(max-width:550px) {
     #back {
         flex-direction: column;
